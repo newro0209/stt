@@ -4,22 +4,13 @@ version = "0.1.0"
 description = "마이크 입력을 omnilingual-asr로 실시간 전사하는 예제"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [
-  "omnilingual-asr",
-  "sounddevice",
-  "soundfile",
-  "numpy",
-]
+dependencies = ["omnilingual-asr", "sounddevice", "soundfile", "numpy"]
 
 [project.optional-dependencies]
-dev = [
-  "ruff",
-  "pyright",
-  "pytest",
-]
+dev = ["ruff", "pyright", "pytest"]
 
 [project.scripts]
-stt = "stt.app:main"
+stt = "stt.cli:main"
 
 [tool.ruff]
 line-length = 100
